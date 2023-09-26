@@ -45,12 +45,12 @@ const Model = ({ isOpen, onClose }) => {
 
     return (
         <div
-            className={`fixed z-[10]  top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center ${isOpen ? "" : "hidden"
-                }`}
-        >
+            className={`fixed z-[10]   top-0 left-0 overflow-y-scroll w-full p-5 h-full bg-black bg-opacity-50 flex justify-center items-center ${isOpen ? "" : "hidden"
+                } `}
+        >   
             <div
                 ref={modalRef}
-                className="bg-white w-[430px] md:h-[700px] overflow-hidden md:w-[492x]  justify-center items-center  shadow-md "
+                className="bg-white w-[430px] h-full md:w-[492x]  justify-center items-center  shadow-md "
             >
                 <div className="flex items-center justify-between w-full border-b ">
                     <p className="text-[24px] font-[500] py-2 md:py-3 px-4 md:px-8">
@@ -61,7 +61,7 @@ const Model = ({ isOpen, onClose }) => {
                     </svg>
 
                 </div>
-                <div className="flex flex-col items-center justify-center gap-y-2 w-full mt-4 ">
+                <div className="flex flex-col items-center justify-center gap-y-2 w-full mt-4 h-[auto]  ">
                     <NewUsed/>
                     <ClearAll/>
                     <CustomDropdown2  options={Make} initialValue="Make" HoverPurple={true} scroll={false} set={true}/>

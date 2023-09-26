@@ -83,3 +83,9 @@ html {
 .carousel img {
   border-radius: px;
 }
+.select-container.ant-form-item-control-wrapper {
+  width: 100%;
+}
+.ant-btn-primary {
+  background-color: #09A122 !important;
+}

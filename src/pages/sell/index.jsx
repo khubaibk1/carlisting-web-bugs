@@ -13,9 +13,9 @@ const index = () => {
         <div >
             <Navbar />
             <div className='md:h-screen'>
-                <div className=" md:absolute left-0 right-0 bottom-0  flex flex-col justify-center items-center md:max-w-[400px] mx-auto  py-6  w-full  ">
+                <div className=" md:absolute left-0 right-0 bottom-0  flex flex-col justify-center items-center md:max-w-[400px] mx-auto h-[600px] py-6  w-full  ">
 
-                    <div className='bg-white rounded-2xl md:shadow-md flex flex-col  p-10 w-full  md:h-[700px] '
+                    <div className='bg-white rounded-2xl md:shadow-md flex flex-col p-10 w-full h-[600px] '
                     style={{ boxShadow: "0 0 5px rgba(0, 0, 0, 0.5)" }}
                     >
                         <h2 className="text-[20px] font-[600] md:font-[500] text-[#141415] md:text-center mb-4">Create Account</h2>
@@ -51,14 +51,23 @@ const index = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                             />
                         </div>
-                        <div className="flex justify-center flex-col items-center mt-10 md:mt-[280px] ">
+                        <div className="my-4 flex justify-center items-center">
+                            <input
+                                type="password"
+                                id="password"
+                                className="mt-1 md:p-2 md:w-[100%] w-full text-[12px] md:text-base border-b focus:outline-none"
+                                placeholder="Confirm Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </div>
+                        <div className="flex justify-center flex-col items-center mt-10 md:mt-10 ">
 
                             <div>
                                 <a href="/packages">
                                     <button
 
                                         className="bg-[#09A122] text-white px-4 py-[10px] w-[320px] md:w-[350px] text-[16px] md:text-[20px] rounded-[10px] hover:bg-[#09A122]"
-
                                     >
                                         Register
                                     </button>

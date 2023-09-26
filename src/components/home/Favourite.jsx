@@ -53,7 +53,7 @@ function SamplePrevArrow(props) {
         </div>
     );
 }
-const CarGarage = () => {
+const Favourite = () => {
     const data = [
         {
             id: 1,
@@ -538,7 +538,7 @@ const CarGarage = () => {
             tele: "+1(202)9782211",
         },
     ];
-    const [isClicked, setIsClicked] = useState(Array(data.length).fill(false));
+    const [isClicked, setIsClicked] = useState(Array(data.length).fill(true));
     const [isMobileFilterModalOpen, setIsMobileFilterModalOpen] = useState(false);
     const handleButtonClick = (index) => {
         const updatedState = [...isClicked];
@@ -593,7 +593,7 @@ const CarGarage = () => {
                     </div>
                     
                     <span className='text-[30px] mt-[30px]  md:text-[34px] font-[600] text-[#141415]'>
-                                    Garage
+                                    Favourite
                                 </span>
                     <div className='flex justify-center items-center relative  md:w-auto mt-[50px]'>
                         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-x-10'>
@@ -730,4 +730,4 @@ const CarGarage = () => {
     )
 }
 
-export default CarGarage
+export default Favourite

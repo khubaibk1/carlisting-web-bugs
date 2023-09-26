@@ -20,7 +20,7 @@ function index() {
             <div className="my-4 flex justify-center items-center h-auto mt-32 ">
                 <div className="md:w-[400px] bg-white md:shadow-xl md:px-10 md:py-10 p-5 rounded-lg">
                     <div className="space-y-8">
-                        <div className="mt-1 md:p-2 w-[320px]  md:w-[500px] text-[12px] md:text-base border-b focus:outline-none">
+                        <div className="mt-1 md:p-2  w-[100%] text-[12px] md:text-base border-b focus:outline-none">
                             <input
                                 type="text"
                                 id="accountName"
@@ -30,7 +30,7 @@ function index() {
                                 onChange={(e) => setAccountName(e.target.value)}
                             />
                         </div>
-                        <div className="mt-1 md:p-2 w-[320px] md:w-[400px] text-[12px] md:text-base border-b focus:outline-none">
+                        <div className="mt-1 md:p-2 w-[100%] text-[12px] md:text-base border-b focus:outline-none">
                             <input
                                 type="text"
                                 id="accountNumber"
@@ -40,7 +40,7 @@ function index() {
                                 onChange={(e) => setAccountNumber(e.target.value)}
                             />
                         </div>
-                        <div className="mt-1 md:p-2 w-[300px] md:w-[400px] text-[12px] md:text-base border-b focus:outline-none">
+                        <div className="mt-1 md:p-2 w-[100%] text-[12px] md:text-base border-b focus:outline-none">
                             <input
                                 type="text"
                                 id="expiry"
@@ -50,7 +50,7 @@ function index() {
                                 onChange={(e) => setExpiry(e.target.value)}
                             />
                         </div>
-                        <div className="mt-1 md:p-2  w-[300px] md:w-[400px] text-[12px] md:text-base border-b focus:outline-none">
+                        <div className="mt-1 md:p-2 w-[100%] text-[12px] md:text-base border-b focus:outline-none">
                             <input
                                 type="text"
                                 id="cvv"
