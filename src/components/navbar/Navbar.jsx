@@ -124,7 +124,7 @@ const Navbar = () => {
                         {/* sign in */}
                         <div className="flex  items-center space-x-2 pl-2  rounded-md">
                             <button
-                            onClick={()=>router.push("/CarGarage")}
+                            onClick={()=>router.push("/carGarage")}
 
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
