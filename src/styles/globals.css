@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-image {
+  background-image: url("/images/bg-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+@media (max-width: 768px) {
+  .bg-image {
+    background-image: url("/images/bg-hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.thumbs-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.thumbs {
+  width: 50px;
+}
+
+.custom-carousel .thumbs .thumb {
+  border-radius: 6px;
+  padding: 0px;
+  border: 3px solid transparent;
+}
+
+.custom-carousel .thumbs .thumb:focus {
+  border: 3px solid #ccc;
+  outline: none;
+}
+
+.custom-carousel .thumbs .thumb.selected,
+.custom-carousel .thumbs .thumb:hover {
+  border: 2px solid rgb(0, 166, 255);
+}
+
+.custom-prev-button,
+.custom-next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background:rgba(20, 20, 21, 0.60);
+  color: gray;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.custom-prev-button {
+  left: 10px;
+}
+
+.custom-next-button {
+  right: 10px;
+}
+
+.custom-prev-button:hover,
+.custom-next-button:hover {
+  background-color: rgba(204, 204, 204, 0.68);
+}
+.carousel {
+  border-radius: 15px;
+}
+.carousel img {
+  border-radius: px;
+}
