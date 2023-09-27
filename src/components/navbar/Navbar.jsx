@@ -110,7 +110,7 @@ const Navbar = () => {
                             </button>
                         </div>
                         
-                        {/* start a project  */}
+                        
                         <button
                         onClick={()=>router.push("/favourite")}
                         >
