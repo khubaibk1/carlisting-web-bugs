@@ -47,9 +47,8 @@ const SignInModal = ({ isOpen, onClose }) => {
                         <button
                             onClick={onClose}
                             className="bg-[#09A122] text-white px-4 py-[10px] w-[320px] md:w-[350px] text-[16px] md:text-[24px] rounded-[10px] hover:bg-[#09A122]"
-
                         >
-                            Sign up
+                            Sign in
                         </button>
                     </div>
                     <button className="text-[12px] font-[400] md:font-[600] mt-3" >
