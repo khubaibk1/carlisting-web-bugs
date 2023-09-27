@@ -1,5 +1,4 @@
 
-// RegisterModal.js
 import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import AccountCreated from './AccountCreated';

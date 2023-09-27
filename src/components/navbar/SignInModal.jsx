@@ -4,10 +4,6 @@ const SignInModal = ({ isOpen, onClose }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleSignIn = () => {
-
-    };
-
     return (
         <div className={`fixed inset-0 flex flex-col justify-start items-start md:items-center md:justify-center z-[99] ${isOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
             <div className="fixed inset-0 bg-black opacity-70 z-[-1]" onClick={onClose}></div>
